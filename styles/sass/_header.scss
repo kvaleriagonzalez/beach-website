@@ -1,0 +1,66 @@
+
+.logo {
+    color:$greenish-cyan;
+    font-size:34.6px;
+  
+}
+
+
+ul li {
+    margin-left:20px;
+    color:$ice-blue;
+    font-size:20px;
+    margin-top:40px;
+}
+
+ul.nav-bar > li:nth-child(1) {
+    color: $greenish-cyan;
+}
+
+h1 {
+    line-height: 58px;
+    letter-spacing: 6.7px;
+    font-size:62px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height:90%;
+    justify-content:center;
+    color: $twilight-blue;
+}
+
+span {
+    color:$spruce;
+    font-size:62px;
+    letter-spacing: 6.7px;
+}
+
+.flex-box {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+
+}
+
+.nav-bar {
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin:0 50px ;
+
+}
+
+header {
+    background: url('../assets/home-image-1.jpg');
+    height:100vh;
+    background-size:cover;
+    
+}
+
+.sunglasses-pic{
+    width:39%;
+    position:relative;
+    bottom:530px;
+    height:500px;
+    
+}

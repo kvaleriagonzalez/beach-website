@@ -1,0 +1,216 @@
+    $lato-font: 'Lato', sans-serif;
+    $play-fair: 'Playfair Display SC', serif;
+    $greenish-cyan:#50e3c2;
+    $black:#2c2c2c;
+    $ice-blue:#fafffe;
+    $twilight-blue:#063974;
+    $light-light-blue:#d2f9f1;
+    $spruce:#0c5f4c;
+
+@import "setup";
+@import "header";
+@import "form";
+@import "blog";
+
+
+body {
+    .font-play, button {
+        font-family: $play-fair;
+    }
+
+}
+
+body,span,h4,
+p,h5,.text-section3,.fourth-text,
+footer p,h2 {
+    font-family: lato;
+
+}
+
+/*FIRST SECTION STYLE*/
+
+.section2 {
+    margin-top:100px;
+}
+
+h4 {
+    font-size:35px;
+    color:$spruce;
+    letter-spacing: 3.8px;
+    line-height: 58px;
+    margin-bottom: 0;
+
+}
+
+.visit-guayana-text {
+    width:80%;
+    font-size:20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    
+}
+
+button {
+    font-size:20px;
+    background-color:$twilight-blue;
+    color:$ice-blue;
+    padding:10px;
+    border:none;
+}
+
+.section2 {
+    display:flex;
+    flex-direction: row;
+    padding-bottom:100px;
+
+}
+
+.small-box-pic {
+    height: 219px;
+    width: 682px;
+    margin-top: 59px;
+    box-shadow: -18px 16px 0px -1px $greenish-cyan;
+
+}
+
+/*SECOND SECTION /GALLERY */
+
+.sky-background{
+    background-color:$light-light-blue;
+    height:563px;
+}
+
+.flex-gallery{
+    display:flex;
+    justify-content: space-between;
+}
+
+.gallery-size {
+    width:90%;
+    margin-top:100px;
+    
+}
+
+/*THIRD SSECTION*/
+
+h5 {
+    font-size:30px;
+    line-height: 58px;
+    letter-spacing: 3.2px;
+    color:$spruce;
+    margin:0;
+}
+
+i {
+    color: #fafffe;
+    border-radius: 50%;
+    background-color: #50e3c2;
+    padding: 10px;
+    margin: 0px 10px;
+    font-size: 23px;
+}
+
+.text-section3 {
+ width:88%;
+ font-size:20px;
+ margin-left: 68px;
+ 
+
+}
+
+.flex-section3 {
+    display:flex;
+    
+}
+
+.third-section {
+    margin:100px ;
+}
+
+/* FOURTH SECTION*/
+
+.fourth-section{
+    background-color:$light-light-blue;
+}
+
+.fourth-text {
+    
+    width: 84%;
+    font-size: 20px;
+}
+
+.fourth-section div h4 {
+    color:$twilight-blue;
+}
+
+.flex-section4{
+    display:flex;
+    justify-content: space-between;
+   
+}
+
+.flex-section4 div {
+    width: 50%;
+    margin-top: 79px;
+}
+
+.picture-fourth-section {
+    width:500px;
+    position:relative;
+    bottom:120px;
+    box-shadow: 21px 22px 0px -6px $greenish-cyan;
+}
+
+.flex-section4 > div:nth-child(2) {
+margin-left: 200px;
+margin-top:23px
+
+}
+
+.picture2-fourth-section {
+    width:500px;
+    position:relative;
+    top:30px;
+    box-shadow: -18px 16px 0px -1px  $greenish-cyan;
+
+}
+
+.fourth-section > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+text-align: end;
+margin-top: 0;
+}
+
+.fourth-text2 {
+width: 79%;
+font-size: 20px;
+margin-top: 0;
+margin-left: 109px;
+}
+
+/*footer*/
+
+footer {
+    margin-top:200px;
+    text-align: center;
+}
+
+footer p{
+    font-size:20px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    background-color: $black;
+    color:$ice-blue;
+    margin-top:150px;
+}
+
+.copyright p {
+    margin:0;
+}
+
+.top-space {
+    margin-top:-30px;
+}
