@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <!--NAVIGATION BAR-->
-<header>
+
+<header class="header-blog">
     <div class="wrapper">
+        <!--NAVIGATION BAR-->
         <nav>
             <div class="nav-bar flex">
                 <p class="font-play logo">Beachstays</p>
@@ -26,93 +27,122 @@
         </nav>
     </div>
 
-    <div class="flex-box">
-        <h2 class="font-play">Blog</h2>
+    <div>
+        <h2 class="blog-tittle">Blog</h2>
     </div>
 
  </header>
+<!-- HIDE HUMBERGUR MENU-->
+<header class="hamburger-menu img-blog">
+    <nav>
+        <label for="toggle"><i class="fa fa-bars"></i> Menu</label>
+        <input type="checkbox" id="toggle" name="toggle" />
+        <!-- These are siblings -->
+        <ul class="sliding-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
     
     <!--THIS IS THE MAIN CONTENT OF THE BLOG PAGE-->
     <main>
         <!--FIRST BLOG SECTION START HERE-->
         <section>
-            <div>
-                <img src="" alt="enter to the beach house">
-                <h3>Five days of ocean seas</h3>
-                <p>Monday January 21th, 2019 by Bora</p>
+            <div class="blog-box"> 
 
-                <p class="this">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptas doloremque aut quae, deleniti sequi corporis tenetur, distinctio facilis animi, quam reiciendis eveniet repellat temporibus dolorem. Distinctio qui reiciendis temporibus. lorem</p>
+                <div>
+                    <img class="blog-image1" src="./assets/post-image.jpg" alt="enter to the beach house">
+                
+                    <div class="border-style">
+                        <h3 class="five-day-text"> Five days of ocean seas</h3>
+                        <h6 class="date-text"><em>Monday January 21th, 2019 by</em> Bora</h6>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptas doloremque aut quae, deleniti sequi corporis tenetur, distinctio facilis animi, quam reiciendis eveniet repellat temporibus dolorem. Distinctio qui reiciendis temporibus. lorem</p>
 
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere cupiditate nemo delectus saepe. Ratione provident excepturi vel, quae distinctio hic harum nobis ab dicta placeat nisi, sunt ipsam, ex explicabo.</p>
+                        <p class="blog-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere cupiditate nemo delectus saepe. Ratione provident excepturi vel, quae distinctio hic harum nobis ab dicta placeat nisi, sunt ipsam, ex explicabo.</p>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste quisquam illo totam iure amet saepe praesentium nemo culpa optio sequi, aut itaque minima dolorem, nesciunt ducimus ipsum architecto quod?</p>
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste quisquam illo totam iure amet saepe praesentium nemo culpa optio sequi, aut itaque minima dolorem, nesciunt ducimus ipsum architecto quod?</p>
 
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolorem modi nihil vitae inventore quidem? Voluptatibus, iste! Reprehenderit unde quaerat in accusantium eos blanditiis ipsa iusto consequatur fugit, ad expedita?</p>
+                        <p class="blog-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolorem modi nihil vitae inventore quidem? Voluptatibus, iste! Reprehenderit unde quaerat in accusantium eos blanditiis ipsa iusto consequatur fugit, ad expedita?</p>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod aspernatur consectetur. Tempora corporis vitae neque placeat dolorem culpa nisi cumque vero officia veritatis. Ipsa quidem error voluptatem facilis illo!
-                </p>
-            </div>
-            <div>
-                <img src="" alt="house in the beach with trees around">
-                <h4>Our mission</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere maiores asperiores deleniti doloribus minima, ipsum reprehenderit dicta mollitia quos impedit, dignissimos quas esse adipisci quaerat animi! Totam, commodi sequi.
-                </p>
-                <h4>Recents Posts</h4>
-                 <ol>
-                     <li>Donec facilis tortor ut</li>
-                    <li>Augue lacinian at vivera</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec pharetra</li>
-                 </ol>
-            </div>
-        </section>
-
-        <!--- SECOND BLOG SECTION START HERE-->
-        <section>
-            <h4>comments</h4>
-            <div>
-                <img src="" alt="man profile picture">
-                <h5>Tuesday October 9th, 2019 by reyansh</h5>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem officiis sint perspiciatis, deserunt sapiente aliquam eum animi. Nisi officia distinctio adipisci dolorem sit magnam, inventore eos. Quae, blanditiis sequi.
-                </p>
-            </div>
-            <div>
-                <img src="" alt="woman profile picture">
-                <h5>Wednesday October 10th, 2019 by Olivia</h5>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id labore voluptatibus ut tempora delectus repellendus quos rerum obcaecati consectetur, perspiciatis vel dicta numquam ipsa tempore temporibus rem possimus! Quia, ratione?
-                </p>
-            </div>
-            <form action="action_page.php">
-                <div class=form-box>
-                    <div>
-                        <label for="fname"></label>
-                        <input type="text" id="fname" name="firstname" placeholder="Name" class="form-field">
-                        <label for="lname"></label>
-                        <input type="text" id="lname" name="lastname" placeholder=" last name" class="form-field">
+                        <p class="blog-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod aspernatur consectetur. Tempora corporis vitae neque placeat dolorem culpa nisi cumque vero officia veritatis. Ipsa quidem error voluptatem facilis illo!
+                        </p>
                     </div>
                 </div>
-                <label for="subject"></label>
-                <textarea id="subject" name="subject" placeholder="Message" class="form-field" style="height:200px"></textarea>
-                <div class="submit">
-                    <input class="hover" type="submit" value="Submit">
+        
+                <div class="blog-side-section">
+                    <img  class= "right-side-picture"src="./assets/sidebar-image.jpg" alt="house in the beach with trees around">
+                    <h6>Our mission</h6>
+                    <p class="blog-text-aside">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere maiores asperiores deleniti doloribus minima.
+                    </p>
+                    <h6>Recents Posts</h6>
+                        <p class="list"><span class="dot"></span>Donec facilis tortor ut</p>
+                        <p class="list"><span class="dot"></span>Augue lacinian at vivera</p>
+                        <p class="list"><span class="dot"></span>Semper sed sapien metus</p>
+                        <p class="list"><span class="dot"></span>Semper sed sapien metus</p>
+            </div>
+        </div>
+        </section>
+
+        <!--SECOND BLOG SECTION START HERE-->
+        <section>
+            <div class="wrapper second-section-blog">
+                <h5 class="comments-tittle">Comments:</h5>
+                <div class="comments-flex">
+                    <div>
+                        <img src="./assets/comment-image.jpg" alt="man profile picture">
+                    </div>
+                    <div>
+                        <h6 class="tittle-date-comment">Tuesday October 9th, 2019 by reyansh</h6>
+                        <p class="text-comments-blog">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem officiis sint perspiciatis, deserunt sapiente aliquam eum animi. Nisi officia distinctio adipisci dolorem sit magnam, inventore eos. Quae, blanditiis sequi.
+                        </p>
+                    </div>
                 </div>
-            </form>
+                <div class="comments-flex">
+                    <div>
+                        <img src="./assets/comment-image2.jpg" alt="woman profile picture">
+                    </div>
+                    <div >
+                        <h6 class="tittle-date-comment">Wednesday October 10th, 2019 by Olivia</h6>
+                        <p class="text-comments-blog">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id labore voluptatibus ut tempora delectus repellendus quos rerum obcaecati consectetur, perspiciatis vel dicta numquam ipsa tempore temporibus rem possimus! Quia, ratione?
+                        </p>
+                    </div>
+                </div>
+            
+
+                <form action="">
+                    <div class=form-box>
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="firstname" placeholder="Name" class="form-field">
+                            <label for="lname"></label>
+                            <input type="text" id="email" placeholder="email adress" class="form-field">
+    
+                    </div>
+                    <label for="subject"></label>
+                    <textarea id="subject" name="subject" placeholder="comment" class="form-field" style="height:200px"></textarea>
+                   
+                        <input class="font-play" type="submit" value="Post Comment">
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     
         <!--FOOTER START HERE -->
         <footer>
-            <section>
+            <div class="copyright">
                 <p>copyright &copy 2019 HackerYou</p>
-            </section>
+            </div>
         </footer>
 
 </body>

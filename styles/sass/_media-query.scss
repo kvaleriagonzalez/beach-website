@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1290px) {
+
+  .third-section .flex-section3 { 
+    flex-direction: column;
+    width:70%;
+}
+  footer p {
+    width:95%;
+}
+
+.moving-picture {
+  position: relative;
+  right: 85px;
+  margin-left: 20px;
+    
+
+}
+
+.small-box-pic {
+    max-width: 200px;
+
+  }
+
+.section2 > div:nth-child(1) {
+margin-left: 20px;
+}
+
+}
+
+@media  (max-width: 900px) {
+
+.flex-gallery > div:nth-child(1) {
+   margin-left: 31px;
+}
+
+.section2 .visit-guayana-text {
+    width: 65%;
+}
+
+header .sunglasses-pic {
+ display:none;
+    
+}
+.fourth-section {
+display: none;
+}
+
+
+.third-section {
+
+padding: 20px;
+}
+
+.third-section h5 {
+
+font-size: 26px;
+}
+
+footer p {
+    width:83%;
+    font-size: 12px;
+    line-height: 31px;
+    margin: 33px;
+    color:red;
+}
+
+header .nav-bar {
+display: none;
+}
+.background-img .title-get-in-touch, .header-blog .blog-tittle{
+margin:0;
+}
+
+
+}
+
+@media only screen and (max-width: 1500px) and (min-width:900px){
+  .hide-section, .img-hide, .hamburger-menu {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+.flex-gallery {
+flex-direction: column;
+padding: 0 40px;
+}
+
+.sky-background {
+padding-bottom: 77px;
+}
+
+.flex-gallery > div:nth-child(1) {
+
+margin-left: 0;
+}
+
+header .flex-box h1,
+header .flex-box h1 span  {
+
+font-size: 37px;
+}
+
+
+header .nav-bar .logo {
+
+font-size: 15.6px;
+}
+
+
+
+
+}

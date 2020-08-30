@@ -1,0 +1,65 @@
+.background-img {
+    background-image: url("../assets/contact-image-1.jpg");
+    height:100vh;
+    background-size:cover;
+    
+    .title-get-in-touch {
+        font-size:69px;
+        color:white;
+        margin-top:360px;
+        position:relative;
+        left:30px;
+        width:50%;
+        margin-left:130px;
+
+    }
+
+}
+
+.contact-flex{
+    display:flex;
+    justify-content: space-between;
+
+    .form-style {
+        background-color: $ice-blue;
+        width: 800px;
+        position:relative;
+        bottom:100px;
+        padding:80px;
+        box-shadow: 18px 16px 0px 1px $greenish-cyan;
+        margin-bottom: -87px;
+    }
+
+    
+}
+
+
+
+.black-icons-div {
+    margin-right:50px;
+    margin-top:110px;
+        .black-icons {
+            background-color:#ffffff;
+            color:black;
+            margin:0;
+            font-size: 22px;
+            margin:0px 8px;
+        }
+        .contact-p {
+            font-size:13px;
+            font-family:'Lato', sans-serif;
+
+            .contact-p > p:nth-child(1) {
+                font-weight: bold;
+                font-size: 17px;
+            }
+
+        }
+        i.fab:nth-child(1) {
+                margin-left: -4px;
+        }
+
+
+}
+
+
