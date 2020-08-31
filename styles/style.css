@@ -465,6 +465,73 @@ footer .copyright p {
   margin: 0;
 }
 
+.hide-section {
+  background-color: #d2f9f1;
+}
+
+.hide-section .hide-text {
+  font-size: 20px;
+}
+
+.hide-section .corners {
+  padding: 30px;
+}
+
+.hide-section .space-bottom-box {
+  padding-bottom: 20px;
+}
+
+ul.sliding-menu {
+  position: fixed;
+  z-index: 10;
+  width: 30%;
+  right: -30%;
+  top: 0;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+ul.sliding-menu a {
+  border-bottom: 1px solid grey;
+  display: inline-block;
+  font-size: 20px;
+  width: 100%;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #0c5f4c;
+  font-weight: bold;
+}
+
+ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+  background: #3498db;
+}
+
+input[type="checkbox"]:checked + ul.sliding-menu {
+  right: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="toggle"] {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  z-index: 10;
+  font-size: 25px;
+}
+
+.hamburger-menu > nav:nth-child(1) > label:nth-child(1) {
+  color: #0c5f4c;
+  font-weight: bold;
+}
+
 header .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,23 +898,7 @@ main .font-play {
   margin-left: -4px;
 }
 
-.hide-section {
-  background-color: #d2f9f1;
-}
-
-.hide-section .hide-text {
-  font-size: 20px;
-}
-
-.hide-section .corners {
-  padding: 30px;
-}
-
-.hide-section .space-bottom-box {
-  padding-bottom: 20px;
-}
-
-@media only screen and (max-width: 1290px) {
+@media (max-width: 1300px) {
   .third-section .flex-section3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -869,8 +920,35 @@ main .font-play {
   .section2 > div:nth-child(1) {
     margin-left: 20px;
   }
+  main .blog-image1 {
+    width: 68%;
+  }
+  main .border-style {
+    border: none;
+  }
+  .blog-side-section {
+    margin-right: 200px;
+  }
+  main .blog-side-section {
+    width: 80%;
+  }
+  form {
+    margin-left: 50px;
+  }
+  .second-section-blog {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .contact-flex .form-style {
+    width: 500px;
+    padding: 39px;
+  }
+  input[type="text"] {
+    width: 45%;
+  }
 }
 
+/*MEDIA QUERY 900PX*/
 @media (max-width: 900px) {
   .flex-gallery > div:nth-child(1) {
     margin-left: 31px;
@@ -895,13 +973,83 @@ main .font-play {
     font-size: 12px;
     line-height: 31px;
     margin: 33px;
-    color: red;
+  }
+  main .blog-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding-bottom: 100px;
+  }
+  main .blog-side-section {
+    width: 100%;
+  }
+  main .blog-side-section p {
+    width: 27%;
+  }
+  main .border-style .blog-text, .blog-side-section {
+    margin-left: 50px;
+  }
+  .blog-box > div:nth-child(1) {
+    margin-bottom: -104px;
   }
   header .nav-bar {
     display: none;
   }
   .background-img .title-get-in-touch, .header-blog .blog-tittle {
     margin: 0;
+    position: relative;
+    top: 300px;
+    left: 50px;
+    font-size: 50px;
+  }
+  main .border-style .blog-text, main .border-style .blog-side-section {
+    width: 100%;
+  }
+  main .blog-image1 {
+    width: 74%;
+  }
+  main .blog-side-section .right-side-picture {
+    margin-top: 0px;
+  }
+  form {
+    width: 500px;
+  }
+  input[type="text"] {
+    width: 40%;
+  }
+  h1.font-play {
+    width: 50%;
+    position: relative;
+    top: 400px;
+    left: 200px;
+  }
+  header .flex-box h1 span {
+    font-size: 17px;
+  }
+  header .flex-box {
+    height: 0;
+  }
+  .background-img .title-get-in-touch, .header-blog .blog-tittle {
+    top: 400px;
+    left: 100px;
+  }
+  .contact-flex .form-style {
+    position: initial;
+  }
+  .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .black-icons-div {
+    padding-left: 82px;
+    padding-top: 50px;
+  }
+  .contact-flex {
+    padding-top: 50px;
   }
 }
 
@@ -911,7 +1059,8 @@ main .font-play {
   }
 }
 
-@media only screen and (max-width: 650px) {
+/*MEDIA QUERY 650*/
+@media (max-width: 650px) {
   .flex-gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -932,49 +1081,65 @@ main .font-play {
   header .nav-bar .logo {
     font-size: 15.6px;
   }
-}
-
-ul.sliding-menu {
-  position: fixed;
-  z-index: 10;
-  width: 30%;
-  right: -30%;
-  top: 0;
-  height: 30%;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-ul.sliding-menu a {
-  border-bottom: 1px solid grey;
-  display: inline-block;
-  font-size: 20px;
-  width: 100%;
-  padding: 20px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-decoration: none;
-  color: black;
-}
-
-ul.sliding-menu a:hover,
-ul.sliding-menu a:focus {
-  background: #3498db;
-}
-
-input[type="checkbox"]:checked + ul.sliding-menu {
-  right: 0;
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-label[for="toggle"] {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  color: #0c5f4c;
-  z-index: 10;
-  font-size: 32px;
+  .section2 .visit-guayana-text {
+    font-size: 14px;
+    width: 93%;
+  }
+  .small-box-pic {
+    display: none;
+  }
+  .third-section h5 {
+    font-size: 17px;
+  }
+  .third-section .text-section3,
+  .hide-section .hide-text {
+    font-size: 16px;
+  }
+  .blog-text-aside {
+    text-align: center;
+  }
+  main .blog-side-section p {
+    width: 59%;
+  }
+  main .border-style .blog-text {
+    font-size: 14px;
+  }
+  main .second-section-blog .comments-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form {
+    width: 250px;
+  }
+  .form-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  h1.font-play {
+    left: 80px;
+  }
+  header .flex-box h1, header .flex-box h1 span {
+    font-size: 25px;
+    text-align: center;
+  }
+  form {
+    margin-left: 15px;
+  }
+  .contact-flex .form-style {
+    width: 331px;
+  }
+  .background-img .title-get-in-touch, .header-blog .blog-tittle {
+    font-size: 35px;
+  }
+  .contact-flex .form-style {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }

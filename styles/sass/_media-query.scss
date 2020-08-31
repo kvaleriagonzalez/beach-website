@@ -1,76 +1,190 @@
-@media only screen and (max-width: 1290px) {
+@media (max-width: 1300px) {
 
-  .third-section .flex-section3 { 
-    flex-direction: column;
-    width:70%;
+.third-section .flex-section3 { 
+  flex-direction: column;
+  width:70%;
 }
-  footer p {
-    width:95%;
+
+footer p {
+  width:95%;
 }
 
 .moving-picture {
   position: relative;
   right: 85px;
-  margin-left: 20px;
-    
-
+  margin-left: 20px;  
 }
 
 .small-box-pic {
     max-width: 200px;
-
-  }
+}
 
 .section2 > div:nth-child(1) {
-margin-left: 20px;
+  margin-left: 20px;
+}
+
+main .blog-image1 {
+  width: 68%;
+}
+
+main .border-style{
+  border:none;
+}
+
+.blog-side-section {  
+  margin-right: 200px;
+}
+
+main .blog-side-section {
+  width: 80%;
+}
+
+form {
+  margin-left: 50px;
+}
+
+.second-section-blog {
+  margin-left: 50px;
+  margin-top:50px;
+}
+
+.contact-flex .form-style {
+  width: 500px;
+  padding: 39px;
+}
+
+input[type="text"] {
+  width: 45%;
 }
 
 }
+
+/*MEDIA QUERY 900PX*/
 
 @media  (max-width: 900px) {
 
 .flex-gallery > div:nth-child(1) {
-   margin-left: 31px;
+  margin-left: 31px;
 }
 
 .section2 .visit-guayana-text {
-    width: 65%;
+  width: 65%;
 }
 
 header .sunglasses-pic {
- display:none;
-    
-}
-.fourth-section {
-display: none;
+  display:none; 
 }
 
+.fourth-section {
+  display: none;
+}
 
 .third-section {
-
-padding: 20px;
+  padding: 20px;
 }
 
 .third-section h5 {
-
-font-size: 26px;
+  font-size: 26px;
 }
 
 footer p {
-    width:83%;
-    font-size: 12px;
-    line-height: 31px;
-    margin: 33px;
-    color:red;
+  width:83%;
+  font-size: 12px;
+  line-height: 31px;
+  margin: 33px;
+ 
+}
+
+main .blog-box {
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+main .blog-side-section {
+  width: 100%;
+}
+
+main .blog-side-section p {
+  width: 27%;
+}
+
+main .border-style .blog-text,.blog-side-section  {
+  margin-left: 50px;  
+}
+
+.blog-box > div:nth-child(1) {
+  margin-bottom: -104px;
 }
 
 header .nav-bar {
-display: none;
-}
-.background-img .title-get-in-touch, .header-blog .blog-tittle{
-margin:0;
+  display: none;
 }
 
+.background-img .title-get-in-touch, .header-blog .blog-tittle{
+  margin:0;
+  position: relative;
+  top: 300px;
+  left: 50px;
+  font-size: 50px;
+}
+
+main .border-style .blog-text, main .border-style .blog-side-section {
+  width: 100%;
+}
+
+main .blog-image1 {
+    width: 74%;
+}
+
+main .blog-side-section .right-side-picture {
+  margin-top: 0px;
+}
+
+form {
+  width: 500px;
+
+}
+
+input[type="text"] {
+  width: 40%;
+}
+
+h1.font-play {
+  width: 50%;
+  position: relative;
+  top: 400px;
+  left: 200px;
+}
+
+header .flex-box h1 span {
+  font-size:17px;
+}
+
+
+header .flex-box {
+height: 0;
+
+}
+
+.background-img .title-get-in-touch, .header-blog .blog-tittle {
+top: 400px;
+left: 100px;
+}
+
+.contact-flex .form-style {
+  position: initial;
+}
+
+.contact-flex {
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.black-icons-div {
+  padding-left: 82px;
+  padding-top: 50px;
+}
 
 }
 
@@ -80,35 +194,107 @@ margin:0;
   }
 }
 
-@media only screen and (max-width: 650px) {
+/*MEDIA QUERY 650*/
+@media  (max-width: 650px) {
 
 .flex-gallery {
-flex-direction: column;
-padding: 0 40px;
+  flex-direction: column;
+  padding: 0 40px;
 }
 
 .sky-background {
-padding-bottom: 77px;
+  padding-bottom: 77px;
 }
 
 .flex-gallery > div:nth-child(1) {
-
-margin-left: 0;
+  margin-left: 0;
 }
 
 header .flex-box h1,
 header .flex-box h1 span  {
-
-font-size: 37px;
+  font-size: 37px;
 }
-
 
 header .nav-bar .logo {
+  font-size: 15.6px;
+}
 
-font-size: 15.6px;
+.section2 .visit-guayana-text {
+  font-size:14px;
+  width:93%;
+}
+
+.small-box-pic{
+  display:none;
+}
+
+.third-section h5 {
+  font-size:17px;
+}
+
+.third-section .text-section3, 
+.hide-section .hide-text{
+  font-size:16px;
+}
+
+.blog-text-aside {
+  text-align: center;
+}
+
+main .blog-side-section p {
+  width: 59%;
+}
+
+main .border-style .blog-text{
+  font-size:14px;
+}
+
+main .second-section-blog .comments-flex {
+  flex-direction: column;
+}
+
+form {
+  width: 250px;
+   margin-left: 15px;
+
+}
+
+.form-box {
+  flex-direction: column;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+h1.font-play {
+  left: 80px;
+}
+
+header .flex-box h1, header .flex-box h1 span {
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.contact-flex .form-style {   
+  width: 331px;
+}
+
+.background-img .title-get-in-touch, .header-blog .blog-tittle {
+
+font-size: 35px;
+}
+
+.contact-flex .form-style {
+box-shadow: none;
+}
+
+.section2 div h4{
+  font-size:14px;
 }
 
 
-
-
 }
+
+
