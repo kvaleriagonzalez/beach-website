@@ -552,15 +552,23 @@ header .nav-bar .logo {
   font-size: 34.6px;
 }
 
-header .nav-bar ul li {
+header .nav-bar ul.nav-bar a {
   margin-left: 20px;
   color: #fafffe;
   font-size: 20px;
-  margin-top: 40px;
 }
 
-header .nav-bar ul.nav-bar > li:nth-child(1) {
+header .nav-bar ul.nav-bar {
+  margin-top: 40px;
+  text-decoration: none;
+}
+
+header .nav-bar ul.nav-bar > li:nth-child(1) > a:nth-child(1) {
   color: #50e3c2;
+}
+
+header .nav-bar ul.nav-bar li a {
+  text-decoration: none;
 }
 
 header .flex-box {
@@ -1043,12 +1051,10 @@ main .font-play {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 50px;
   }
   .black-icons-div {
     padding-left: 82px;
-    padding-top: 50px;
-  }
-  .contact-flex {
     padding-top: 50px;
   }
 }
@@ -1112,6 +1118,7 @@ main .font-play {
   }
   form {
     width: 250px;
+    margin-left: 15px;
   }
   .form-box {
     -webkit-box-orient: vertical;
@@ -1129,9 +1136,6 @@ main .font-play {
     font-size: 25px;
     text-align: center;
   }
-  form {
-    margin-left: 15px;
-  }
   .contact-flex .form-style {
     width: 331px;
   }
@@ -1141,5 +1145,8 @@ main .font-play {
   .contact-flex .form-style {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .section2 div h4 {
+    font-size: 14px;
   }
 }

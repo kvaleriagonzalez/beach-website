@@ -12,17 +12,26 @@ header {
           
         }
 
-        ul li  {
+        ul.nav-bar a {
             margin-left:20px;
-             color:$ice-blue;
+            color:$ice-blue;
             font-size:20px;
-            margin-top:40px;
 
         }
 
-        ul.nav-bar > li:nth-child(1) {
+        ul.nav-bar{
+            margin-top:40px;
+            text-decoration:none;
+        }
+
+        ul.nav-bar > li:nth-child(1) > a:nth-child(1) {
         color: $greenish-cyan;
-        } 
+ 
+        }
+        
+        ul.nav-bar li a {
+            text-decoration:none;
+        }
     }
 
     .flex-box {
